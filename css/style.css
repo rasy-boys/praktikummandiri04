@@ -1,0 +1,169 @@
+/* ===== Reset & dasar ===== */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 12px;
+    background-color: #f5f5dc;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Kontainer halaman */
+body > div {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Header ===== */
+#header {
+    background-color: #deb887;
+    padding: 18px 20px;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #c9a26b;
+}
+
+#header h1 {
+    margin: 0 0 14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #0000cd;
+}
+
+blockquote {
+    margin: 0;
+    padding: 8px 14px;
+    background-color: #ffd700;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#soekarno {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ===== Navigasi ===== */
+ul.menu, body > div:nth-of-type(2) ul {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0 6px;
+    text-align: center;
+}
+
+body > div:nth-of-type(2) li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+a { color: #1a0dab; text-decoration: underline; }
+a:hover { color: #d2691e; text-decoration: none; }
+
+/* ===== Gambar utama ===== */
+.gambar {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.gambar img {
+    height: 160px;
+    width: auto;
+    margin: 0 4px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+    vertical-align: top;
+}
+
+/* ===== Isi ===== */
+.isi { padding: 10px 6px; }
+
+.isi p {
+    text-align: justify;
+    margin: 0 0 14px;
+}
+
+/* Huruf kapital awal (drop cap) */
+.isi p:first-of-type::first-letter {
+    float: left;
+    font-size: 48px;
+    line-height: 40px;
+    padding: 4px 4px 0 0;
+    color: #0000ff;
+}
+
+.jawa { font-weight: bold; color: #8b4513; }
+
+/* ===== Profil & Budidaya ===== */
+#profil, #beternak {
+    padding: 6px 12px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    border-left: 5px solid #deb887;
+    border-radius: 4px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #deb887;
+    padding-bottom: 4px;
+}
+
+h4 {
+    display: inline;
+    color: #8b4513;
+    font-size: 15px;
+}
+
+ul li, ol li { margin-bottom: 8px; text-align: justify; }
+
+/* ===== Koleksi foto ===== */
+.koleksi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.koleksi img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    transition: transform .25s;
+}
+
+.koleksi img:hover { transform: scale(1.06); }
+
+/* ===== Promo ===== */
+.promo {
+    background-color: #fff8dc;
+    border: 2px dashed #d2691e;
+    border-radius: 6px;
+    padding: 12px 20px 16px;
+    text-align: center;
+}
+
+.promo h2 { font-size: 18px; color: #8b0000; }
+.promo del { color: #888; }
+.promo strong { color: #c00; font-size: 20px; }
+#Wa { font-weight: bold; color: #0a7d2c; }
+.promo ol { display: inline-block; text-align: left; }
+
+/* ===== Responsif ===== */
+@media (max-width: 600px) {
+    #header h1 { font-size: 22px; }
+    .gambar img { height: 110px; }
+    .koleksi img { width: 45%; }
+}
